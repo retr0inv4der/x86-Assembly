@@ -7,14 +7,14 @@ global _start
 
 _start:
     mov eax , 0 
-    mov ecx , 1
+    mov ecx , 0
 
 
 loop:
     inc ecx
     add eax , ecx 
     cmp ecx , [num]
-    jne loop
+    jl loop
     jmp end
 
 end : 
